@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB9ABC69-9369-4376-B199-CE0455E5AEAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E0F31F19-0D83-49A1-93D0-C9DC4553EEBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endava.BookSharing.Domain.UnitTests", "tests\Endava.BookSharing.Domain.UnitTests\Endava.BookSharing.Domain.UnitTests.csproj", "{55DC2810-6630-45AE-8C95-B45C82CE4E62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endava.BookSharing.Application.UnitTests", "tests\Endava.BookSharing.Application.UnitTests\Endava.BookSharing.Application.UnitTests.csproj", "{CAE90A3F-3BBE-4E16-A4D6-B356AA28EE9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endava.BookSharing.Application", "src\Endava.BookSharing.Application\Endava.BookSharing.Application.csproj", "{93B0B1BE-A303-433B-8C08-91D986A37705}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endava.BookSharing.Domain", "src\Endava.BookSharing.Domain\Endava.BookSharing.Domain.csproj", "{D5BE9A8B-6BCA-4510-B623-72B1C4348A6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endava.BookSharing.Presentation", "src\Endava.BookSharing.Presentation\Endava.BookSharing.Presentation.csproj", "{BB7C4801-0F04-482D-BBA3-8C4460037A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endava.BookSharing.Infrastructure", "src\Endava.BookSharing.Infrastructure\Endava.BookSharing.Infrastructure.csproj", "{7735FB75-7FD7-4F6E-A8A1-ACB9553D89AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endava.BookSharing.Infrastructure.UnitTests", "tests\Endava.BookSharing.Infrastructure.UnitTests\Endava.BookSharing.Infrastructure.UnitTests.csproj", "{D31D19FB-C158-4143-B979-64697DFB52A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endava.BookSharing.Presentation.UnitTests", "tests\Endava.BookSharing.Presentation.UnitTests\Endava.BookSharing.Presentation.UnitTests.csproj", "{3A70BFAF-4E93-4E87-AD46-BC1D27D92ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55DC2810-6630-45AE-8C95-B45C82CE4E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DC2810-6630-45AE-8C95-B45C82CE4E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DC2810-6630-45AE-8C95-B45C82CE4E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DC2810-6630-45AE-8C95-B45C82CE4E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE90A3F-3BBE-4E16-A4D6-B356AA28EE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE90A3F-3BBE-4E16-A4D6-B356AA28EE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE90A3F-3BBE-4E16-A4D6-B356AA28EE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE90A3F-3BBE-4E16-A4D6-B356AA28EE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B0B1BE-A303-433B-8C08-91D986A37705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B0B1BE-A303-433B-8C08-91D986A37705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B0B1BE-A303-433B-8C08-91D986A37705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B0B1BE-A303-433B-8C08-91D986A37705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BE9A8B-6BCA-4510-B623-72B1C4348A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BE9A8B-6BCA-4510-B623-72B1C4348A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BE9A8B-6BCA-4510-B623-72B1C4348A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BE9A8B-6BCA-4510-B623-72B1C4348A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7C4801-0F04-482D-BBA3-8C4460037A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7C4801-0F04-482D-BBA3-8C4460037A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7C4801-0F04-482D-BBA3-8C4460037A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7C4801-0F04-482D-BBA3-8C4460037A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7735FB75-7FD7-4F6E-A8A1-ACB9553D89AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7735FB75-7FD7-4F6E-A8A1-ACB9553D89AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7735FB75-7FD7-4F6E-A8A1-ACB9553D89AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7735FB75-7FD7-4F6E-A8A1-ACB9553D89AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31D19FB-C158-4143-B979-64697DFB52A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31D19FB-C158-4143-B979-64697DFB52A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31D19FB-C158-4143-B979-64697DFB52A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31D19FB-C158-4143-B979-64697DFB52A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A70BFAF-4E93-4E87-AD46-BC1D27D92ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A70BFAF-4E93-4E87-AD46-BC1D27D92ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A70BFAF-4E93-4E87-AD46-BC1D27D92ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A70BFAF-4E93-4E87-AD46-BC1D27D92ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55DC2810-6630-45AE-8C95-B45C82CE4E62} = {E0F31F19-0D83-49A1-93D0-C9DC4553EEBD}
+		{CAE90A3F-3BBE-4E16-A4D6-B356AA28EE9F} = {E0F31F19-0D83-49A1-93D0-C9DC4553EEBD}
+		{93B0B1BE-A303-433B-8C08-91D986A37705} = {CB9ABC69-9369-4376-B199-CE0455E5AEAF}
+		{D5BE9A8B-6BCA-4510-B623-72B1C4348A6E} = {CB9ABC69-9369-4376-B199-CE0455E5AEAF}
+		{BB7C4801-0F04-482D-BBA3-8C4460037A75} = {CB9ABC69-9369-4376-B199-CE0455E5AEAF}
+		{7735FB75-7FD7-4F6E-A8A1-ACB9553D89AF} = {CB9ABC69-9369-4376-B199-CE0455E5AEAF}
+		{D31D19FB-C158-4143-B979-64697DFB52A1} = {E0F31F19-0D83-49A1-93D0-C9DC4553EEBD}
+		{3A70BFAF-4E93-4E87-AD46-BC1D27D92ED7} = {E0F31F19-0D83-49A1-93D0-C9DC4553EEBD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {639DBA9E-1732-4909-8783-EBCD2CED174F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Endava.BookSharing.Domain</AssemblyName>
+        <RootNamespace>Endava.BookSharing.Domain</RootNamespace>
+        <LangVersion>10.0</LangVersion>
+        <WarningAsErrors>Nullable</WarningAsErrors>
+    </PropertyGroup>
+
+</Project>
