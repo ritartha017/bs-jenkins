@@ -20,7 +20,7 @@ public class CreateBookValidatorTests
 
     #region BookPublicationDateTests
     [Theory]
-    [InlineData("12.12.2012")]
+    [InlineData("12/12/2012")]
     [InlineData("01/01/2001")]
     [InlineData("01/05/2022")]
     public void CreateBookValidator_WhenGivenAValidDate_Accepts(string date)
