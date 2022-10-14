@@ -1,0 +1,26 @@
+<testsuites>
+  <testsuite name="Endava.BookSharing.Infrastructure.UnitTests.dll" tests="12" skipped="0" failures="0" errors="0" time="0.23910209999999998" timestamp="2022-10-14T19:56:56" hostname="EN412241" id="0" package="Endava.BookSharing.Infrastructure.UnitTests.dll">
+    <properties />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Profiles.MappingTests" name="ShouldMapLanguageToLanguageDb(entity: LanguageDb { Id = &quot;Id65a04a88-2032-4863-aed9-a7dde0c9ccae&quot;, Name = &quot;Name64fb0ae7-93cc-4ee9-993b-a1bdef28ef26&quot; })" time="0.0342425" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Profiles.MappingTests" name="ShouldMapGetGenreDbToGenre(entity: Genre { Id = &quot;Idaebcf96c-1934-4f42-80b3-06fc89d71a0e&quot;, Name = &quot;Namefed8e4e8-f22d-4c9c-bcd5-4588e4916538&quot; })" time="0.0012313" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Profiles.MappingTests" name="ShouldMapLanguageDbToLanguage(entity: LanguageDb { Id = &quot;Id131fdb5c-2ac1-4b9f-9845-e39190d084d2&quot;, Name = &quot;Name523fb8d4-d938-492d-b626-283f997e734d&quot; })" time="0.0186603" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Profiles.MappingTests" name="ShouldMapAuthorDbToAuthor(entity: Author { AddedByUserId = &quot;AddedByUserId7ea3d9d8-2838-41f7-870e-e14349005698&quot;, FullName = &quot;FullNameb57e41fa-144f-4b2c-b358-55eec30fffeb&quot;, Id = &quot;Idc67e8e80-28d4-46cf-a51f-c468ba7561eb&quot;, IsApproved = True })" time="0.0009466" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Profiles.MappingTests" name="ShouldMapGenreToGenreDb(entity: Genre { Id = &quot;Idcab1b601-c584-4d34-a913-99cd369a3dab&quot;, Name = &quot;Nameb6e6cb7b-7b86-440c-b9a2-c723e465f119&quot; })" time="0.0013753" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Profiles.MappingTests" name="ShouldMapAuthorToAuthorDb(entity: Author { AddedByUserId = &quot;AddedByUserIdc0aae8bc-1012-4387-9c66-8c0555bff326&quot;, FullName = &quot;FullName2d730b7a-a5eb-4d6f-a0da-7666f0d768ee&quot;, Id = &quot;Id8e1ad603-5732-4bc6-a94d-f8d0ffcf2ddb&quot;, IsApproved = True })" time="0.0063820" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Services.IdentityServiceTests" name="ValidateUserCredentials_WithNotExistendUserName_ShouldReturnNull(username: &quot;username81f4952b-9bb3-4e3b-a678-fe85baedec9b&quot;, password: &quot;passwordfeaabe35-ee68-4fdf-9d7a-bb4adccecb7b&quot;)" time="0.1489878" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Services.IdentityServiceTests" name="ValidateUserCredentials_WithExistingUserNameAndValidPasswordAndExistingRoles_ShouldReturnUserRolesDtoType(username: &quot;username3607ae7a-008f-475a-80f3-2c284e55d649&quot;, password: &quot;password0f66c4ed-e3b6-47b3-b6ff-70e86ba248bf&quot;, user: UserNamefad6a745-1ecc-4fed-a5a0-8f21f9600fb6, roles: [&quot;3c9bb0fe-0de5-4bef-b72a-0d416e4b39cd&quot;, &quot;49ca3311-7b7d-4a98-aeec-57e3e0a0f4b3&quot;, &quot;872254b8-549d-45eb-876c-f9f52334c922&quot;])" time="0.0102180" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Services.IdentityServiceTests" name="CreatePasswordResetToken_UserNotFound_ShouldThrowException(email: &quot;email1137251f-7023-4f2f-818a-32d19abbef66&quot;)" time="0.0029226" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Services.IdentityServiceTests" name="CreatePasswordResetToken_UserFound_ShouldReturnGeneratedPasswordResetToken(user: UserNamefcfae4dc-8a4c-4e4a-8a0d-1b00a1f25874, email: &quot;email84056d9d-5e36-4c39-83b2-fb8e06beb69f&quot;, token: &quot;token1d54def6-97c2-4360-81c6-b33a427ed05f&quot;)" time="0.0054367" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Services.IdentityServiceTests" name="ValidateUserCredentials_WithExistingUserNameAndInvalidPassword_ShouldReturnNull(username: &quot;username6c30c0bf-7b3f-4385-8d53-9c38b17b348f&quot;, password: &quot;passwordbbc63a5b-670a-4c51-9414-e49956e5bb84&quot;, user: UserNamee2126244-9264-480e-b315-85d0aae25387)" time="0.0028769" />
+    <testcase classname="Endava.BookSharing.Infrastructure.UnitTests.Services.IdentityServiceTests" name="ValidateUserCredentials_WithExistingUserNameAndValidPassword_ShouldRecieveUserRoles(username: &quot;usernameeaa88814-fd6c-47d5-ae41-2bd408163d3b&quot;, password: &quot;password538c8a57-6a24-47cb-bcaf-66d830f94f3e&quot;, user: UserNameee4fc345-86cc-4ef2-b116-361095402509, fixture: [[[...]]])" time="0.0058221" />
+    <system-out>
+Test Framework Informational Messages:
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.10)
+[xUnit.net 00:00:00.85]   Discovering: Endava.BookSharing.Infrastructure.UnitTests
+[xUnit.net 00:00:00.88]   Discovered:  Endava.BookSharing.Infrastructure.UnitTests
+[xUnit.net 00:00:00.89]   Starting:    Endava.BookSharing.Infrastructure.UnitTests
+[xUnit.net 00:00:01.18]   Finished:    Endava.BookSharing.Infrastructure.UnitTests
+</system-out>
+    <system-err></system-err>
+  </testsuite>
+</testsuites>
