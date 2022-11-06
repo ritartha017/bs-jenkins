@@ -3,8 +3,7 @@ def ON_SUCCESS_SEND_EMAIL = true
 pipeline {
     agent any
     environment {
-        PATH = "C:\\WINDOWS\\SYSTEM32"
-        dotnet = "C:\\Program Files\\dotnet"
+        dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
     }
     parameters {
         booleanParam(name: "CLEAN_WORKSPACE", defaultValue: false)
