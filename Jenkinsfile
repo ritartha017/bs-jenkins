@@ -4,7 +4,7 @@ pipeline {
     agent any
     environment {
         PATH = "C:\\WINDOWS\\SYSTEM32"
-        dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
+        dotnet = "C:\\Program Files\\dotnet"
     }
     parameters {
         booleanParam(name: "CLEAN_WORKSPACE", defaultValue: false)
@@ -27,7 +27,7 @@ pipeline {
         
         stage('Restore packages') {
             steps {
-                bat "$dotnet restore ${workspace}\\Endava.BookSharing.sln"
+                bat "dotnet restore ${workspace}\\Endava.BookSharing.sln"
             }
         }
         
