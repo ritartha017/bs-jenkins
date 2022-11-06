@@ -3,7 +3,7 @@ def ON_SUCCESS_SEND_EMAIL = true
 pipeline {
     agent any
     environment {
-        
+        dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
         PATH = "C:\\WINDOWS\\SYSTEM32"
     }
     parameters {
