@@ -4,7 +4,6 @@ pipeline {
     agent any
     environment {
         dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
-        PATH = "C:\\WINDOWS\\SYSTEM32"
     }
     parameters {
         booleanParam(name: "CLEAN_WORKSPACE", defaultValue: false)
