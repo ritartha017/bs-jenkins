@@ -27,7 +27,7 @@ pipeline {
         
         stage('Restore packages') {
             steps {
-                bat "dotnet restore ${workspace}\\Endava.BookSharing.sln"
+                dotnet restore ${workspace}\\Endava.BookSharing.sln
             }
         }
         
