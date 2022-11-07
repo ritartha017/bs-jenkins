@@ -2,9 +2,6 @@ def ON_FAILURE_SEND_EMAIL = true
 def ON_SUCCESS_SEND_EMAIL = true 
 pipeline {
     agent any
-    environment {
-        dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
-    }
     parameters {
         booleanParam(name: "CLEAN_WORKSPACE", defaultValue: false)
         booleanParam(name: "TESTING_FRONTENT", defaultValue: false)
