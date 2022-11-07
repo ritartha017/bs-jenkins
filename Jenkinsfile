@@ -29,13 +29,13 @@ pipeline {
         
         stage('Build Stage') {
             steps {
-                sh "dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
+                sh "sudo dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
             }
         }
         
         stage('Test BE Stage') {
             steps {
-                sh "dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
+                sh "sudo dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
             }
         }
         
