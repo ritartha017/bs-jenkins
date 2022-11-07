@@ -3,7 +3,6 @@ def ON_SUCCESS_SEND_EMAIL = true
 pipeline {
     agent any
     environment {
-        PATH = "C:\\WINDOWS\\SYSTEM32"
         dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
     }
     parameters {
@@ -27,19 +26,19 @@ pipeline {
         
         stage('Restore packages') {
             steps {
-                bat "dotnet restore ${workspace}\\Endava.BookSharing.sln"
+                sh "dotnet restore ${workspace}\\Endava.BookSharing.sln"
             }
         }
         
         stage('Build Stage') {
             steps {
-                bat "dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
+                sh "dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
             }
         }
         
         stage('Test BE Stage') {
             steps {
-                bat "dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
+                sh "dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
             }
         }
         
