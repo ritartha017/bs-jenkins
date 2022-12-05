@@ -23,19 +23,19 @@ pipeline {
         
         stage('Restore packages') {
             steps {
-                sh "sudo dotnet restore ${workspace}\\Endava.BookSharing.sln"
+                sh "dotnet restore ${workspace}\\Endava.BookSharing.sln"
             }
         }
         
         stage('Build Stage') {
             steps {
-                sh "sudo dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
+                sh "dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
             }
         }
         
         stage('Test BE Stage') {
             steps {
-                sh "sudo dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
+                sh "dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
             }
         }
         
