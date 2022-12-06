@@ -52,7 +52,8 @@ pipeline {
         
         stage('Test Ubuntu') {
             steps {
-                bat "ssh msorunga@172.18.32.1"
+                bat "ssh -tt msorunga@172.18.32.1 'ls -la'"
+                bat "ssh -tt msorunga@172.18.32.1 & whoami"
                 bat "whoami"
             }
         }
