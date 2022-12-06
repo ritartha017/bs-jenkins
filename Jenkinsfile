@@ -49,6 +49,13 @@ pipeline {
                 echo "${params.TESTING_FRONTENT}"
             }
         }
+        
+        stage('Test Ubuntu') {
+            steps {
+                bat "ssh msorunga@172.18.32.1"
+                echo "whoami"
+            }
+        }
     }
     post {
         success {
