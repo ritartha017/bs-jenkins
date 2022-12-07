@@ -9,7 +9,7 @@ pipeline {
         booleanParam(name: "CLEAN_WORKSPACE", defaultValue: false)
         booleanParam(name: "TESTING_FRONTENT", defaultValue: false)
     }
-    
+
     stages {
         stage('Clean workspace') {
             when { expression { params.CLEAN_WORKSPACE } }
@@ -17,36 +17,43 @@ pipeline {
                 cleanWs()
             }
         }
-        
+
         stage('Checkout Stage') {
             steps {
                 git branch: 'main', credentialsId: '9e279393-bcb6-48fb-9a1f-32ce2f3785f9', url: 'https://github.com/ritartha017/bs-jenkins.git'
             }
         }
-        
+
         stage('Restore packages') {
             steps {
                 bat "dotnet restore ${workspace}\\Endava.BookSharing.sln"
             }
         }
-        
+
         stage('Build Stage') {
             steps {
                 bat "dotnet msbuild ${workspace}\\Endava.BookSharing.sln /p:configuration=\"release\""
             }
         }
-        
+
         stage('Test BE Stage') {
             steps {
                 bat "dotnet test --logger:\"junit;LogFilePath=%WORKSPACE%\\TestResults\\dotnet-test-result.xml\""
             }
         }
-        
+
         stage('Test FE Stage') {
             when { expression { params.TESTING_FRONTENT } }
             steps {
                 echo "Testing frontent stage .."
                 echo "${params.TESTING_FRONTENT}"
+            }
+        }
+        
+        stage('Test Ubuntu') {
+            steps {
+                bat "ssh msorunga@EN412241 'ls -la'"
+                bat "whoami"
             }
         }
     }
