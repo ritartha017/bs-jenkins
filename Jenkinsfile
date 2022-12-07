@@ -52,7 +52,7 @@ pipeline {
         
         stage('Test Ubuntu') {
             steps {
-                bat "ssh msorunga@EN412241 './deploy.sh'"
+                bat "ssh msorunga@EN412241 'curl -OL https://raw.githubusercontent.com/ritartha017/bs-jenkins/blob/main/deploy.sh & ./deploy.sh'"
                 bat "whoami"
             }
         }
