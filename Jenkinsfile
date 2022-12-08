@@ -50,10 +50,15 @@ pipeline {
             }
         }
         
-        stage('Test Ubuntu') {
+        stage('Continuous Delivery') {
+            steps {
+                bat "ssh msorunga@EN412241 'docker pull msorunga/booksharing:latest'"
+            }
+        }
+        
+        stage('Continuous Deployment') {
             steps {
                 bat "ssh msorunga@EN412241 'curl -OL https://raw.githubusercontent.com/ritartha017/bs-jenkins/blob/main/deploy.sh & ./deploy.sh'"
-                bat "whoami"
             }
         }
     }
