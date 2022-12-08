@@ -58,7 +58,7 @@ pipeline {
         
         stage('Continuous Deployment') {
             steps {
-                bat "ssh msorunga@172.24.192.171 'docker-compose -d --env-file ./.env up'"
+                bat "ssh msorunga@172.24.192.171 'docker-compose --env-file ./.env up -d'"
             }
         }
     }
