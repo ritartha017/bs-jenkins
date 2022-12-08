@@ -58,7 +58,10 @@ pipeline {
         
         stage('Continuous Deployment') {
             steps {
-                bat "ssh msorunga@172.24.192.171 'cd bs-jenkins & docker-compose up'"
+                bat """
+                    ssh msorunga@172.24.192.171
+                    cd bs-jenkins & docker-compose up
+                    """
             }
         }
     }
