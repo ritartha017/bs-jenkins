@@ -58,7 +58,7 @@ pipeline {
         
         stage('Continuous Deployment') {
             steps {
-                bat "ssh msorunga@EN412241 'curl -OL https://raw.githubusercontent.com/ritartha017/bs-jenkins/blob/main/deploy.sh & ./deploy.sh'"
+                bat "ssh msorunga@EN412241 'git clone https://github.com/ritartha017/bs-jenkins & cd bs-jenkins & docker-compose --env-file ./.env up'"
             }
         }
     }
