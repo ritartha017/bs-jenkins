@@ -52,13 +52,13 @@ pipeline {
         
         stage('Continuous Delivery') {
             steps {
-                bat "ssh msorunga@EN412241 'docker pull msorunga/booksharing:latest'"
+                bat "ssh msorunga@172.24.192.171 'docker pull msorunga/booksharing:latest'"
             }
         }
         
         stage('Continuous Deployment') {
             steps {
-                bat "ssh msorunga@EN412241 'git clone https://github.com/ritartha017/bs-jenkins & cd bs-jenkins & docker-compose --env-file ./.env up'"
+                bat "ssh msorunga@172.24.192.171 'git clone https://github.com/ritartha017/bs-jenkins & cd bs-jenkins & docker-compose --env-file ./.env up'"
             }
         }
     }
