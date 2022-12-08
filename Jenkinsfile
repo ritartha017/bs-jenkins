@@ -58,7 +58,7 @@ pipeline {
         
         stage('Continuous Deployment') {
             steps {
-                bat "ssh msorunga@172.24.192.171 'git clone https://github.com/ritartha017/bs-jenkins & cd bs-jenkins & docker-compose --env-file ./.env up'"
+                bat "ssh msorunga@172.24.192.171 'cd bs-jenkins & docker-compose --env-file ./.env up'"
             }
         }
     }
