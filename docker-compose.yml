@@ -28,7 +28,7 @@ services:
   booksharingapp:
     depends_on:
       - db
-    image: booksharing:runtime
+    image: msorunga/booksharing:latest
     restart: always
     build:
       context: .
