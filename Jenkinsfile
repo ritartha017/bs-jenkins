@@ -52,7 +52,7 @@ pipeline {
         
         stage('Continuous Delivery') {
             steps {
-                bat "ssh msorunga@172.24.192.171 'docker pull msorunga/booksharing:latest'"
+                bat "ssh msorunga@192.168.8.137 'docker pull msorunga/booksharing:latest'"
             }
         }
         
