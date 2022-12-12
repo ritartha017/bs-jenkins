@@ -45,8 +45,10 @@ pipeline {
         stage('Test FE Stage') {
             when { expression { params.TESTING_FRONTENT } }
             steps {
+                bat "git checkout staging"
                 echo "Testing frontent stage .."
                 echo "${params.TESTING_FRONTENT}"
+                bat "git checkout main & git merge staging"
             }
         }
         
